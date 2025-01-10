@@ -32,9 +32,9 @@ public class Snake {
         if (direction == 2) snakeX[0]--;
         if (direction == 3) snakeY[0]--;
 
-        for (int d = length - 1; d > 0; d--) {
+        /*for (int d = length - 1; d > 0; d--) {
             if ((snakeX[0] == snakeX[d]) & (snakeX[0] == snakeY[d])) length = d - 2;
-        }
+        }*/
 
         if (snakeX[0] > main.WIDTH) snakeX[0] = 0;
         if (snakeX[0] < 0) snakeX[0] = main.WIDTH - 1;
